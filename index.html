@@ -10,27 +10,29 @@
     <title>Frontend Mentor | Huddle landing page with alternating feature blocks</title>
 </head>
 <body>
-    <header class="header">
-        <img class="header__logo" src="./dist/images/logo.svg" alt="logo">
-        <button class="header__btn">
-            Try it Free
-        </button>
-    </header>
     <main>
-        <section class="community">
-            <article class="community__txt">
-                <h1 class="community__txt__title">build the community your fan will love</h1>
-                <p class="community__txt__brief">
-                    Huddle re-imaginates the way we build communities. You have a voice, but
-                    so does your audience. Create connections with your users as you engage 
-                    in geniune discussion.
-                </p>
-                <button class="community__txt__btn">get started for free</button>
-            </article>
-            <article class="community__img">
-                <img src="./dist/images/illustration-mockups.svg" alt="user-illustration">
-            </article>
-        </section>
+        <div class="bg">
+            <header class="header">
+                <img class="header__logo" src="./dist/images/logo.svg" alt="logo">
+                <button class="header__btn">
+                    Try it Free
+                </button>
+            </header>
+            <section class="community">
+                <article class="community__txt">
+                    <h1 class="community__txt__title">build the community your fan will love</h1>
+                    <p class="community__txt__brief">
+                        Huddle re-imaginates the way we build communities. You have a voice, but
+                        so does your audience. Create connections with your users as you engage 
+                        in geniune discussion.
+                    </p>
+                    <button class="community__txt__btn">get started for free</button>
+                </article>
+                <article class="community__img">
+                    <img src="./dist/images/illustration-mockups.svg" alt="user-illustration">
+                </article>
+            </section>
+        </div>
         <section class="features">
             <article class="feature">
                 <div class="feature__txt">
@@ -41,10 +43,12 @@
                         conversations you miss out on with a feedback form.
                     </p>
                 </div>
-                <img class="feature__img" src="./dist/images/illustration-grow-together.svg" alt="">
+                <div class="feature__img">
+                    <img src="./dist/images/illustration-grow-together.svg" alt="">
+                </div>
             </article>
             <article class="feature">
-                <div class="feature__txt">
+                <div class="feature__txt feature__txt--order">
                     <h1 class="feature__txt__title">flowing conversations</h1>
                     <p class="feature__txt__brief">
                         You wouldn't paginate a conversation in real life, so why do
@@ -52,7 +56,9 @@
                         flow.
                     </p>
                 </div>
-                <img class="feature__img" src="./dist/images/illustration-flowing-conversation.svg" alt="">
+                <div class="feature__img feature__img--order">
+                    <img src="./dist/images/illustration-flowing-conversation.svg" alt="">
+                </div>
             </article>
             <article class="feature">
                 <div class="feature__txt">
@@ -63,7 +69,9 @@
                         immediately.
                     </p>
                 </div>
-                <img class="feature__img" src="./dist/images/illustration-your-users.svg" alt="">
+                <div class="feature__img">
+                    <img src="./dist/images/illustration-your-users.svg" alt="">
+                </div>
             </article>
             <article class="recommend">
                 <h1 class="recommend__title">ready to build your community</h1>
