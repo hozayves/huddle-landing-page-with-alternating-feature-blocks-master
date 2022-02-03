@@ -26,6 +26,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   padding: 2rem 1rem 1rem 1rem;
+  width: 100%;
 }
 
 .header__logo {
@@ -60,12 +61,36 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 2rem 1rem 1rem 1rem;
+  padding: 0 1rem 1rem 1rem;
   position: relative;
 }
 
+main .bg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+  background-image: url("../images/bg-hero-mobile.svg");
+  background-color: #ebfbff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  padding-bottom: 2rem;
+}
+
 main .community {
-  padding: 0 1rem;
+  padding: 2rem 1rem 0 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -140,6 +165,10 @@ main .community__img {
   max-width: 100%;
 }
 
+main .community__img img {
+  height: 250px;
+}
+
 main .features {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -155,7 +184,7 @@ main .features {
       -ms-flex-align: center;
           align-items: center;
   gap: 2rem;
-  margin-top: 3rem;
+  margin-top: 53rem;
   margin-bottom: 10rem;
   min-width: 100%;
 }
@@ -371,6 +400,31 @@ main .recommend__btn:hover {
 }
 
 @media screen and (min-width: 768px) {
+  main {
+    position: relative;
+  }
+  main .bg {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 5rem;
+    background-image: url("../images/bg-hero-desktop.svg");
+    background-color: #ebfbff;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+  }
   main .community__txt__title {
     font-size: 2rem;
     width: 400px;
@@ -384,8 +438,12 @@ main .recommend__btn:hover {
   main .community__img {
     width: 90%;
   }
+  main .community__img img {
+    height: 400px;
+  }
   main .features {
     width: 90%;
+    margin-top: 67rem;
   }
   main .features .feature__txt__title {
     font-size: 2rem;
@@ -407,8 +465,36 @@ main .recommend__btn:hover {
 }
 
 @media screen and (min-width: 980px) {
+  .header {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  main {
+    position: relative;
+  }
+  main .bg {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 2rem;
+    height: 100vh;
+    background-image: url("../images/bg-hero-desktop.svg");
+    background-color: #ebfbff;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
   main .community {
-    border: 1px solid red;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -416,6 +502,9 @@ main .recommend__btn:hover {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+    width: 100%;
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
   main .community__txt {
     text-align: left;
@@ -438,6 +527,19 @@ main .recommend__btn:hover {
   }
   main .community__img {
     width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  main .features {
+    margin-top: 43rem;
   }
   main .features .feature {
     -webkit-box-orient: horizontal;
