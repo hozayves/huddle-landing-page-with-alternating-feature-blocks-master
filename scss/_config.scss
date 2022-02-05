@@ -11,3 +11,19 @@ $font-family: (
     'heading' : 'Poppins',
     'body' : 'Open Sans' 
 );
+// Responsive mixins
+@mixin ipad-screen {
+    @media screen and (min-width: 768px) {
+        @content;
+    }
+}
+@mixin medium-screen {
+    @media screen and (min-width: 980px) {
+        @content;
+    }
+}
+@mixin large-screen {
+    @media screen and (min-width: 1440px) {
+        @content;
+    }
+}
