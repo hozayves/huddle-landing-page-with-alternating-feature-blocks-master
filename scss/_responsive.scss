@@ -20,6 +20,16 @@
         }
         .features {
             width: 90%;
+            .feature {
+                &__txt {
+                    &__title {
+                        font-size: 2rem;
+                    }
+                    &__brief {
+                        font-size: 1.5rem;
+                    }
+                }
+            }
         }
         .recommend {
             width: 70%;
@@ -29,9 +39,123 @@
         }
     }
     .footer {
-        border: 1px solid red;
         padding-right: 4rem;
         padding-left: 4rem;
+        font-size: 1.5rem;
     }
 }
 
+// Responsive for medium screen
+@include medium-screen {
+    main {
+        .community {
+            border: 1px solid red;
+            flex-direction: row;
+            justify-content: flex-start;
+            &__txt {
+                text-align:left;
+                width: 50%;
+                align-items: flex-start;
+                &__title {
+                    font-size: 2rem;
+                }
+                &__brief {
+                    font-size: 1rem;
+                    text-align-last: left;
+                    width: 480px;
+                }
+                &__btn {
+                    width: 50%;
+                    font-size: 1rem;
+                }
+            }
+            &__img {
+                width: 50%;
+            }
+        }
+        .features {
+            .feature {
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+                padding-left: 10rem;
+                &__txt {
+                    order:0;
+                    width: 50%;
+                    text-align: left;
+                    &__brief {
+                        font-size: 1rem;
+                        width: 74%;
+                    }
+                    &--order {
+                        order: 1;
+                    }
+                }
+                &__img {
+                    order: 1;
+                    width: 50%;
+                    display: flex;
+                    justify-content: flex-end;
+                    img {
+                        width: 80%;
+                        height: 300px;
+                    }
+                    &--order {
+                        order: 0;
+                        justify-content: flex-start;
+                    }
+                }
+            }
+        }
+        .recommend {
+            width: 40%;
+            padding: 3rem 1rem;
+            bottom: -6rem;
+            &__btn {
+                width: 50%;
+            }
+        }
+    }
+    .footer {
+        font-size: 1rem;
+        &__infos {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            &__contacts {
+                width: 45%; 
+            }
+            &__links {
+                width: 20%;
+                align-self: flex-start;
+                padding-left: 4rem;
+                &__link {
+                    margin: 0;
+                }
+            }
+            &__social-media {
+                width: 20%;
+                align-self: flex-start;
+                margin-top: 0;
+                i {
+                    padding: 0.5rem;
+                }
+            }
+        }
+        &__copyright {
+            text-align: right;
+        }
+    }
+}
+
+// Responsive for large screen
+@include large-screen {
+    html{ 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    body{
+        width: 1440px;
+    }
+}
