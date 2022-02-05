@@ -1,6 +1,22 @@
 // Responsive for Ipad screen
 @include ipad-screen {
     main {
+        position: relative;
+        .bg {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 5rem;
+            background-image: url('../images/bg-hero-desktop.svg');
+            background-color: map-get($colors, 'very-pale-cyan');
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+        }
         .community {
             &__txt {
                 &__title {
@@ -16,10 +32,14 @@
             }
             &__img {
                 width: 90%;
+                img {
+                    height: 400px;
+                }
             }
         }
         .features {
             width: 90%;
+            margin-top: 67rem;
             .feature {
                 &__txt {
                     &__title {
@@ -47,11 +67,33 @@
 
 // Responsive for medium screen
 @include medium-screen {
+    .header {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
     main {
+        position: relative;
+        .bg {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+            height: 100vh;
+            background-image: url('../images/bg-hero-desktop.svg');
+            background-color: map-get($colors, 'very-pale-cyan');
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
         .community {
-            border: 1px solid red;
             flex-direction: row;
             justify-content: flex-start;
+            width: 100%;
+            padding-left: 3rem;
+            padding-right: 3rem;
             &__txt {
                 text-align:left;
                 width: 50%;
@@ -71,9 +113,13 @@
             }
             &__img {
                 width: 50%;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
             }
         }
         .features {
+            margin-top: 43rem;
             .feature {
                 flex-direction: row;
                 justify-content: flex-start;
