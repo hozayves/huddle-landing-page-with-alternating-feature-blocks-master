@@ -1,0 +1,37 @@
+// Responsive for Ipad screen
+@include ipad-screen {
+    main {
+        .community {
+            &__txt {
+                &__title {
+                    font-size: 2rem;
+                    width: 400px;
+                }
+                &__brief {
+                    width: 400px;
+                }
+                &__btn {
+                    max-width: 350px;
+                }
+            }
+            &__img {
+                width: 90%;
+            }
+        }
+        .features {
+            width: 90%;
+        }
+        .recommend {
+            width: 70%;
+            &__btn {
+                max-width: 50%;
+            }
+        }
+    }
+    .footer {
+        border: 1px solid red;
+        padding-right: 4rem;
+        padding-left: 4rem;
+    }
+}
+
